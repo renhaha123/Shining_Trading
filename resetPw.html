@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>找回密码</title>
+  <link rel="icon" href="images/sun.png"/> <!--链接网页标题图标-->
+  <link rel="stylesheet" href="css/style.css" type="text/css"/><!--链接网页css文件-->
+  <script src="javascript/javascript.js" type="text/JavaScript"></script><!--链接网页js文件-->
+
+  <!--设置背景图片-->
+  <style>
+  body{
+    background-image:url(images/resetPwbg.jpg);
+  }
+  </style>
+
+ </head>
+ <body onload="createKey()">
+    <div id="resetPwdiv" >
+	<form action="php/resetPw.php" method="post" onsubmit="return checkInfoReset()">
+	    <table cellpadding="30px" cellspacing="20px">
+		<tr><td align="center">忘记密码？我们来帮您</td></tr>
+		<tr><td>用&nbsp;户&nbsp;名&nbsp;：<input id="un" type="text" name="username"/></td></tr>
+		<tr><td></td></tr>
+		<tr><td>验&nbsp;证&nbsp;码&nbsp;：<input type="text" name="yanzheng" id="yzReset"/><span id="selectKey" onClick="createKey()"></span></td></tr>
+		<tr><td><input  type="submit" value="确定" style="width:120px;height:40px;" /></td></tr>
+		</table>
+	  </form>
+	</div>
+
+	
+</html>

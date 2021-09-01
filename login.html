@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>欢迎登录闪亮二手交易</title>
+  <link rel="icon" href="images/sun.png"/> <!--链接网页标题图标-->
+  <link rel="stylesheet" href="css/style.css" type="text/css"/><!--链接网页css文件-->
+  <script src="javascript/javascript.js" type="text/JavaScript"></script><!--链接网页js文件-->
+
+  <!--设置背景图片-->
+  <style>
+  body{
+    background-image:url(images/loginbg.jpg);
+  }
+  </style>
+
+ </head>
+ <body onload="createKey()">
+   
+    <div id="logindiv" >
+	  <form action="php/yanzheng.php" method="post" onsubmit="return checkInfo()"><!--若出现错误，可返回false给onsubmit事件，阻止表单提交-->
+	    <table cellpadding="20px" cellspacing="20px">
+		<tr><td>欢迎登录闪亮二手交易</td></tr>
+		<tr><td></td></tr>
+		<tr><td>用户名：<input id="un" type="text" name="username"/></td></tr>
+		<tr><td>密&nbsp;&nbsp;&nbsp;码：<input id="pw" type="password" name="pw" /></td></tr>
+		<tr><td>验证码：<input id="yz" type="text" name="yanzheng"/><span id="selectKey" onClick="createKey()"></span></td></tr>
+		<tr><td><a href="resetPw.html" style="  color:white;">忘记密码</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="register.html" style="  color:white;">注册账号</a></td></tr>
+		<tr><td><input class="btn_one"type="reset" value="重置"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="btn_one" type="submit" value="登录" /></td></tr>
+		</table>
+	  </form>
+	</div>
+
+	<div id="logindiv_1">
+	<table cellpadding="20px" cellspacing="20px">
+	<tr><td><p >[闪 亮 因 你 而 亮]</p></tr></td>
+	<tr><td><img src="images/log_img.jpg" style="width:245px;height:220px;"/></tr></td>
+	</table>
+	</div>
+
+ 
+ </body>
+</html>

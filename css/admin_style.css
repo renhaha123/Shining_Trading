@@ -1,0 +1,190 @@
+/*清除浏览器样式*/
+*{
+  margin:0px;
+  padding:0px;
+}
+
+
+a{
+  cursor:pointer;
+}
+
+
+*定义超链接样式*/
+  a{text-decoration:none ; }
+  a:link{ color:#000; }/*正常样式*/
+  a:visited{color:#fff;}/*访问过的样式*/
+  a:hover{ color:#f00;text-decoration:underline;}/*鼠标悬停样式*/
+  a:active{color:#FF3399; }/*当前激活样式*/
+
+
+/*管理员登录页面css代码开始*/
+
+/*定义登录的logindiv样式*/
+
+#logindiv{
+  color:white;
+  font-size:22px;
+  border:1px solid white;
+  position:absolute;
+  top:50px;
+  left:660px;
+  width:380px;
+  height:180px;
+  
+}
+
+
+ /*登录页面按钮样式*/
+#btn_one{
+  height:30px; 
+  width:80px;
+  border:none;
+  background:rgba(0,255,255,0.5);
+  color:#fff;
+  border-radius:2px;
+}
+
+/*管理员登录页面css代码结束*/
+
+
+
+/*管理员主页面css代码开始*/
+#head{
+  padding:10px;
+  position:fixed;
+  z-index:10;
+  width:100%;
+  height:6%;
+  background-color:#333;
+  color:white;
+  font-size:20px;
+  top:0px;
+}
+
+#head1{
+  width:100px; 
+  height:50px;
+  float:left;
+}
+
+
+
+#span1{
+  position:absolute;
+  left:62px;
+  top:18px;
+}
+
+#span2{
+  position:absolute;
+  left:1325px;
+  top:18px;
+}
+
+#left{
+  position:fixed;
+  margin-top:60px;
+  width:155px;
+  height:853px;
+  background-color:#332;
+  color:white;
+  font-size:20px;
+}
+
+#left_ul{
+  list-style-type:none;
+}
+
+#left_ul li{
+  padding:10px;
+  margin:15px;
+  width:85px;
+  height:36px;
+  
+}
+
+#content{
+  background-color:#fed;
+  position:fixed;
+  margin-left:155px;
+  margin-top:60px;
+  width:1381px;
+  height:3000px;
+  
+  
+}
+
+
+#adminDiv{
+  position:absolute;
+  top:100px;
+  left:600px;
+}
+
+#userDiv{
+  position:absolute;
+  top:50px;
+  left:470px;
+}
+
+#alterUserDiv{
+  position:absolute;
+  top:50px;
+  left:470px;
+}
+
+
+#goodsTypeDiv{
+ width:60%;
+ margin:100px auto;
+}
+
+#alterGoodsTypeDiv{
+  position:absolute;
+  top:50px;
+  left:470px;
+}
+
+#addGoodsNameDiv{
+  position:absolute;
+  top:50px;
+  left:470px;
+}
+
+
+#sale_goodsDiv{
+  position:absolute;
+  top:20px;
+  left:470px;
+  overflow-y:auto;
+  height:650px;
+  
+}
+
+.admin_tb th {
+	background-color:#93DAFF;
+	color:#000000;
+}
+.admin_tb{
+    width:100%;
+	font-size:0.95em;
+	text-align:center;
+	padding:4px;
+	border-collapse:collapse;
+}
+.admin_tb th,.admin_tb td {
+	border: 1px solid #c1e9fe;
+	border-width:1px 0 1px 0;
+	padding:10px;
+}
+.admin_tb tr {
+	border: 1px solid #c1e9fe;
+}
+.admin_tb tr:nth-child(odd){
+	background-color:#dbf2fe;
+}
+.admin_tb tr:nth-child(even){
+	background-color:#fdfdfd;
+}
+/*管理员主页面css代码结束*/

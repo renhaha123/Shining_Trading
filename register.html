@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>欢迎注册闪亮二手交易</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css"/><!--链接网页css文件-->
+  <link rel="icon" href="images/sun.png"/> <!--链接网页标题图标-->
+  <script src="javascript/javascript.js" type="text/JavaScript"></script><!--链接网页js文件-->
+
+<!--设置背景图片-->
+  <style>
+  body{
+    background-image:url(images/regbg.jpg);
+  }
+  </style>
+
+ </head>
+
+ <body onload="createKey()">
+    <div id="regdiv">
+	  <form action="php/reg.php" method="post" onsubmit="return checkInfoReg()"><!--若出现错误，可返回false给onsubmit事件，阻止表单提交-->
+	    <table cellpadding="0px" cellspacing="15px" style="color:white;font-size:20px;">
+		<tr><td><p style="color:white;font-size:20px;";>欢迎注册闪亮账号</p></td></tr>
+		<tr><td></td></tr>
+		<tr><td>用户名：<input  type="text" name="username" id="unReg"/></td></tr>
+		<tr><td>密&nbsp;&nbsp;&nbsp;&nbsp;码：<input type="password"  name="pw" id="pwReg" /></td></tr>
+		<tr><td>院&nbsp;&nbsp;&nbsp;&nbsp;系：<input type="text"  name="department" id="department" /></td></tr>
+        <tr><td>班&nbsp;&nbsp;&nbsp;&nbsp;级：<input type="text" name="classReg" id="classReg" /></td></tr>
+		<tr><td>姓&nbsp;&nbsp;&nbsp;&nbsp;名：<input type="text"  name="xingming" id="xingming" /></td></tr>
+		<tr><td>电&nbsp;&nbsp;&nbsp;&nbsp;话：<input type="text"  name="telephone" id="telephone" /></td></tr>
+        <tr><td>Q&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Q：<input type="text" name="qq" id="qq" /></td></tr>
+		<tr><td>微&nbsp;&nbsp;&nbsp;&nbsp;信：<input type="text"  name="weixin" id="weixin" /></td></tr>
+		<tr><td>验证码：<input type="text" name="yanzheng" id="yzReg"/><span id="selectKey" onClick="createKey()"></span></td></tr>
+		<tr><td align="center"><input type="submit" value="注册" style="width:120px;height:40px;" /></td></tr>
+		</table>
+	  </form>
+	</div>
+
+	<div id="regdiv_1">
+	<p >[闪 亮 因 你 而 亮]</p>
+	<img src="images/log_img.jpg" style="width:245px;height:220px;"/>
+	</div>
+ </body>
+</html>
